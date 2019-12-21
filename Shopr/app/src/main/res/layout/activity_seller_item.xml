@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDescription">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/seller_item_image"
+            android:layout_width="400dp"
+            android:layout_height="242dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:layout_width="171dp"
+            android:layout_height="91dp"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/price_tag" />
+
+        <TextView
+            android:id="@+id/seller_item_price"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dip"
+            android:background="#07000000"
+            android:padding="12dip"
+            android:text="$300"
+            android:textColor="#3677a8" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/seller_item_name"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/seller_item_des"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_item_name" />
+
+    <Button
+        android:id="@+id/seller_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Delete Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

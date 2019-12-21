@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDescription">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/des_item_image"
+            android:layout_width="400dp"
+            android:layout_height="242dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:layout_width="154dp"
+            android:layout_height="89dp"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/price_tag" />
+
+        <TextView
+            android:id="@+id/des_price_tag"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dip"
+            android:background="#07000000"
+            android:padding="12dip"
+            android:text="$300"
+            android:textColor="#3677a8" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/des_item_name"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/des_item_des"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_item_name" />
+
+
+    <TextView
+        android:id="@+id/des_item_city"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintHorizontal_bias="0.333"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_item_des" />
+
+    <TextView
+        android:id="@+id/des_item_phone"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_item_email" />
+
+    <TextView
+        android:id="@+id/des_item_email"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_item_city" />
+
+    <Button
+        android:id="@+id/BuyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Add to WishList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

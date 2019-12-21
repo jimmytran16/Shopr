@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/homeItem_settings"
+        android:icon="@drawable/buyandsell"/>
+    <item
+        android:title="Settings"
+        android:id="@+id/settingsItem_settings"
+        android:icon="@drawable/settingsicon"/>
+    <item
+        android:title="Sign out"
+        android:id="@+id/signOutItem_settings"
+        android:icon="@drawable/logout"/>
+</menu>
