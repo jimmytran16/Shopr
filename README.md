@@ -1,7 +1,5 @@
 # Shopr 
 
-12/21/2019
-
 <b>Android Mobile App - Marketplace</b>
 
 <img src="Shopr/APP_IMAGES/shopr_logo.png" height="150px" width="150px">
